@@ -15,8 +15,7 @@ namespace Modelirovanie_KR_2_Anisimov
         public Form1()
         {
             InitializeComponent();
-            OperationalDevice
-            
+            DataGridView dataGrid_A = dataGridView1;
         }
     }
 }

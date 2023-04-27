@@ -14,16 +14,25 @@ namespace Modelirovanie_KR_2_Anisimov
         private bool[] _conditions; // X1, X2, X3, ...
         private bool[] _operations; // Y1, Y2, Y3, ...
         private bool _PP;
+        private Form1 _form;
 
-        public OperationalDevice() {
+        public OperationalDevice(Form1 form)
+        {
             _states = new bool[11];
             _currentState = 0;
             _prevState = _currentState;
             _conditions = new bool[7];
             _operations = new bool[12];
+            _form = form;
         }
 
-       public void StateMemory(byte stateCode)
+        public void Tact()
+        {
+            // StateMemory(_form.stateCode);
+            // ConditionMemory(_form.conditionCode);
+        }
+
+        public void StateMemory(byte stateCode)
         {
 
             _currentState = stateCode; 
@@ -34,6 +43,11 @@ namespace Modelirovanie_KR_2_Anisimov
         }
 
         public void ConditionMemory(ushort conditionCode) { 
+
+        }
+
+        public void Decoder()
+        {
 
         }
 
