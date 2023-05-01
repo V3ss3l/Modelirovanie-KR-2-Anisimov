@@ -86,6 +86,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Pictures\ГСА-вар-2.drawio.png" />
+    <Content Include="Pictures\ГСА-вар-3.drawio.png" />
     <Content Include="Pictures\ГСА-вар-с-разметкой.drawio.png" />
     <Content Include="Pictures\ГСА-с-разметкой.drawio.png" />
   </ItemGroup>

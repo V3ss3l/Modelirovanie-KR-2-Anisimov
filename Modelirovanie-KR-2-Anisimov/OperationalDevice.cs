@@ -28,36 +28,36 @@ namespace Modelirovanie_KR_2_Anisimov
 
         public void Tact()
         {
-            // StateMemory(_form.stateCode);
-            // ConditionMemory(_form.conditionCode);
+            StateMemory();
+            ConditionMemory();
+            var buff = Decoder();
         }
 
-        public void StateMemory(byte stateCode)
-        {
-
-            _currentState = stateCode; 
+        public void StateMemory()
+        { 
             //int stateIndex = BinToDec(stateCode.ToString());
             _states[_prevState] = false;
             _states[_currentState] = true;
             _prevState = _currentState;
         }
 
-        public void ConditionMemory(ushort conditionCode) { 
-
+        public void ConditionMemory() { 
+            
         }
 
-        public void Decoder()
+        public int Decoder()
         {
-
+            return BinToDec(_currentState.ToString());
         }
 
-        /*private int BinToDec(string bin)
+        private int BinToDec(string bin)
         {
             int dec = 0;
-            for(int i = 0, j = bin.Length-1; i < bin.Length; i++, j--) {
+            for (int i = 0, j = bin.Length - 1; i < bin.Length; i++, j--)
+            {
                 dec += bin[i] == '1' ? (int)Math.Pow(2, j) : 0;
             }
             return dec;
-        }*/
+        }
     }
 }

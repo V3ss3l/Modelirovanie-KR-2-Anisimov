@@ -28,46 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.col_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_15 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_14 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_13 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_12 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_11 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_10 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_5 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_0 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn5 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn10 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn11 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn12 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn13 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn14 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn15 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn16 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button_Start = new System.Windows.Forms.Button();
+            this.comboBox_Type = new System.Windows.Forms.ComboBox();
+            this.button_Tact = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,30 +139,6 @@
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -173,9 +184,237 @@
             this.panel1.Size = new System.Drawing.Size(519, 757);
             this.panel1.TabIndex = 0;
             // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(544, 2105);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox12.TabIndex = 23;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(544, 1895);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox11.TabIndex = 22;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(544, 1686);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 21;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(544, 1480);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 20;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(544, 1376);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 19;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(544, 1155);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 18;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(544, 1057);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.TabIndex = 17;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(544, 948);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 16;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(794, 838);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 15;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(544, 838);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 14;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(544, 614);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 13;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(544, 265);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(472, 2166);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(14, 13);
+            this.radioButton12.TabIndex = 11;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(472, 1939);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(14, 13);
+            this.radioButton11.TabIndex = 10;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(472, 1736);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(14, 13);
+            this.radioButton10.TabIndex = 9;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(472, 1525);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(14, 13);
+            this.radioButton9.TabIndex = 8;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(472, 1420);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(14, 13);
+            this.radioButton8.TabIndex = 7;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(472, 1210);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(14, 13);
+            this.radioButton7.TabIndex = 6;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(472, 1106);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(14, 13);
+            this.radioButton6.TabIndex = 4;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(472, 999);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton5.TabIndex = 5;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(472, 887);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(472, 664);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(472, 316);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(472, 101);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Modelirovanie_KR_2_Anisimov.Properties.Resources.ГСА_с_разметкой_drawio;
+            this.pictureBox1.Image = global::Modelirovanie_KR_2_Anisimov.Properties.Resources.ГСА_вар_3_drawio;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(900, 2300);
@@ -206,124 +445,153 @@
             this.col_2,
             this.col_1,
             this.col_0});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.NullValue = "0";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(52, 19);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.NullValue = "0";
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView1.Size = new System.Drawing.Size(524, 47);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.updateValueOfCell);
             // 
             // col_15
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "0";
+            this.col_15.DefaultCellStyle = dataGridViewCellStyle1;
             this.col_15.HeaderText = "15";
-            this.col_15.MaxInputLength = 1;
             this.col_15.Name = "col_15";
             this.col_15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.col_15.Width = 30;
             // 
             // col_14
             // 
             this.col_14.HeaderText = "14";
-            this.col_14.MaxInputLength = 1;
             this.col_14.Name = "col_14";
+            this.col_14.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_14.Width = 30;
             // 
             // col_13
             // 
             this.col_13.HeaderText = "13";
-            this.col_13.MaxInputLength = 1;
             this.col_13.Name = "col_13";
+            this.col_13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_13.Width = 30;
             // 
             // col_12
             // 
             this.col_12.HeaderText = "12";
-            this.col_12.MaxInputLength = 1;
             this.col_12.Name = "col_12";
+            this.col_12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_12.Width = 30;
             // 
             // col_11
             // 
             this.col_11.HeaderText = "11";
-            this.col_11.MaxInputLength = 1;
             this.col_11.Name = "col_11";
+            this.col_11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_11.Width = 30;
             // 
             // col_10
             // 
             this.col_10.HeaderText = "10";
-            this.col_10.MaxInputLength = 1;
             this.col_10.Name = "col_10";
+            this.col_10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_10.Width = 30;
             // 
             // col_9
             // 
             this.col_9.HeaderText = "9";
-            this.col_9.MaxInputLength = 1;
             this.col_9.Name = "col_9";
+            this.col_9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_9.Width = 30;
             // 
             // col_8
             // 
             this.col_8.HeaderText = "8";
-            this.col_8.MaxInputLength = 1;
             this.col_8.Name = "col_8";
+            this.col_8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_8.Width = 30;
             // 
             // col_7
             // 
             this.col_7.HeaderText = "7";
-            this.col_7.MaxInputLength = 1;
             this.col_7.Name = "col_7";
+            this.col_7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_7.Width = 30;
             // 
             // col_6
             // 
             this.col_6.HeaderText = "6";
-            this.col_6.MaxInputLength = 1;
             this.col_6.Name = "col_6";
+            this.col_6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_6.Width = 30;
             // 
             // col_5
             // 
             this.col_5.HeaderText = "5";
-            this.col_5.MaxInputLength = 1;
             this.col_5.Name = "col_5";
+            this.col_5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_5.Width = 30;
             // 
             // col_4
             // 
             this.col_4.HeaderText = "4";
-            this.col_4.MaxInputLength = 1;
             this.col_4.Name = "col_4";
+            this.col_4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_4.Width = 30;
             // 
             // col_3
             // 
             this.col_3.HeaderText = "3";
-            this.col_3.MaxInputLength = 1;
             this.col_3.Name = "col_3";
+            this.col_3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_3.Width = 30;
             // 
             // col_2
             // 
             this.col_2.HeaderText = "2";
-            this.col_2.MaxInputLength = 1;
             this.col_2.Name = "col_2";
+            this.col_2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_2.Width = 30;
             // 
             // col_1
             // 
             this.col_1.HeaderText = "1";
-            this.col_1.MaxInputLength = 1;
             this.col_1.Name = "col_1";
+            this.col_1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_1.Width = 30;
             // 
             // col_0
             // 
             this.col_0.HeaderText = "0";
-            this.col_0.MaxInputLength = 1;
             this.col_0.Name = "col_0";
+            this.col_0.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_0.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.col_0.Width = 30;
             // 
             // groupBox1
@@ -346,141 +614,170 @@
             this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
-            this.dataGridView2.Location = new System.Drawing.Point(52, 83);
+            this.dataGridViewButtonColumn1,
+            this.dataGridViewButtonColumn2,
+            this.dataGridViewButtonColumn3,
+            this.dataGridViewButtonColumn4,
+            this.dataGridViewButtonColumn5,
+            this.dataGridViewButtonColumn6,
+            this.dataGridViewButtonColumn7,
+            this.dataGridViewButtonColumn8,
+            this.dataGridViewButtonColumn9,
+            this.dataGridViewButtonColumn10,
+            this.dataGridViewButtonColumn11,
+            this.dataGridViewButtonColumn12,
+            this.dataGridViewButtonColumn13,
+            this.dataGridViewButtonColumn14,
+            this.dataGridViewButtonColumn15,
+            this.dataGridViewButtonColumn16});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.NullValue = "0";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.Location = new System.Drawing.Point(52, 91);
             this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle6.NullValue = "0";
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.RowTemplate.DefaultCellStyle.NullValue = "0";
             this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView2.Size = new System.Drawing.Size(524, 47);
-            this.dataGridView2.TabIndex = 5;
+            this.dataGridView2.TabIndex = 4;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.updateValueOfCell);
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewButtonColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "15";
-            this.dataGridViewTextBoxColumn1.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 30;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.NullValue = "0";
+            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewButtonColumn1.HeaderText = "15";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn1.Width = 30;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridViewButtonColumn2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "14";
-            this.dataGridViewTextBoxColumn2.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 30;
+            this.dataGridViewButtonColumn2.HeaderText = "14";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn2.Width = 30;
             // 
-            // dataGridViewTextBoxColumn3
+            // dataGridViewButtonColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "13";
-            this.dataGridViewTextBoxColumn3.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 30;
+            this.dataGridViewButtonColumn3.HeaderText = "13";
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn3.Width = 30;
             // 
-            // dataGridViewTextBoxColumn4
+            // dataGridViewButtonColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "12";
-            this.dataGridViewTextBoxColumn4.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 30;
+            this.dataGridViewButtonColumn4.HeaderText = "12";
+            this.dataGridViewButtonColumn4.Name = "dataGridViewButtonColumn4";
+            this.dataGridViewButtonColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn4.Width = 30;
             // 
-            // dataGridViewTextBoxColumn5
+            // dataGridViewButtonColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "11";
-            this.dataGridViewTextBoxColumn5.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 30;
+            this.dataGridViewButtonColumn5.HeaderText = "11";
+            this.dataGridViewButtonColumn5.Name = "dataGridViewButtonColumn5";
+            this.dataGridViewButtonColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn5.Width = 30;
             // 
-            // dataGridViewTextBoxColumn6
+            // dataGridViewButtonColumn6
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "10";
-            this.dataGridViewTextBoxColumn6.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 30;
+            this.dataGridViewButtonColumn6.HeaderText = "10";
+            this.dataGridViewButtonColumn6.Name = "dataGridViewButtonColumn6";
+            this.dataGridViewButtonColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn6.Width = 30;
             // 
-            // dataGridViewTextBoxColumn7
+            // dataGridViewButtonColumn7
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "9";
-            this.dataGridViewTextBoxColumn7.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 30;
+            this.dataGridViewButtonColumn7.HeaderText = "9";
+            this.dataGridViewButtonColumn7.Name = "dataGridViewButtonColumn7";
+            this.dataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn7.Width = 30;
             // 
-            // dataGridViewTextBoxColumn8
+            // dataGridViewButtonColumn8
             // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "8";
-            this.dataGridViewTextBoxColumn8.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 30;
+            this.dataGridViewButtonColumn8.HeaderText = "8";
+            this.dataGridViewButtonColumn8.Name = "dataGridViewButtonColumn8";
+            this.dataGridViewButtonColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn8.Width = 30;
             // 
-            // dataGridViewTextBoxColumn9
+            // dataGridViewButtonColumn9
             // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "7";
-            this.dataGridViewTextBoxColumn9.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 30;
+            this.dataGridViewButtonColumn9.HeaderText = "7";
+            this.dataGridViewButtonColumn9.Name = "dataGridViewButtonColumn9";
+            this.dataGridViewButtonColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn9.Width = 30;
             // 
-            // dataGridViewTextBoxColumn10
+            // dataGridViewButtonColumn10
             // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "6";
-            this.dataGridViewTextBoxColumn10.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 30;
+            this.dataGridViewButtonColumn10.HeaderText = "6";
+            this.dataGridViewButtonColumn10.Name = "dataGridViewButtonColumn10";
+            this.dataGridViewButtonColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn10.Width = 30;
             // 
-            // dataGridViewTextBoxColumn11
+            // dataGridViewButtonColumn11
             // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "5";
-            this.dataGridViewTextBoxColumn11.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 30;
+            this.dataGridViewButtonColumn11.HeaderText = "5";
+            this.dataGridViewButtonColumn11.Name = "dataGridViewButtonColumn11";
+            this.dataGridViewButtonColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn11.Width = 30;
             // 
-            // dataGridViewTextBoxColumn12
+            // dataGridViewButtonColumn12
             // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "4";
-            this.dataGridViewTextBoxColumn12.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 30;
+            this.dataGridViewButtonColumn12.HeaderText = "4";
+            this.dataGridViewButtonColumn12.Name = "dataGridViewButtonColumn12";
+            this.dataGridViewButtonColumn12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn12.Width = 30;
             // 
-            // dataGridViewTextBoxColumn13
+            // dataGridViewButtonColumn13
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "3";
-            this.dataGridViewTextBoxColumn13.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 30;
+            this.dataGridViewButtonColumn13.HeaderText = "3";
+            this.dataGridViewButtonColumn13.Name = "dataGridViewButtonColumn13";
+            this.dataGridViewButtonColumn13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn13.Width = 30;
             // 
-            // dataGridViewTextBoxColumn14
+            // dataGridViewButtonColumn14
             // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "2";
-            this.dataGridViewTextBoxColumn14.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 30;
+            this.dataGridViewButtonColumn14.HeaderText = "2";
+            this.dataGridViewButtonColumn14.Name = "dataGridViewButtonColumn14";
+            this.dataGridViewButtonColumn14.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn14.Width = 30;
             // 
-            // dataGridViewTextBoxColumn15
+            // dataGridViewButtonColumn15
             // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "1";
-            this.dataGridViewTextBoxColumn15.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 30;
+            this.dataGridViewButtonColumn15.HeaderText = "1";
+            this.dataGridViewButtonColumn15.Name = "dataGridViewButtonColumn15";
+            this.dataGridViewButtonColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn15.Width = 30;
             // 
-            // dataGridViewTextBoxColumn16
+            // dataGridViewButtonColumn16
             // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "0";
-            this.dataGridViewTextBoxColumn16.MaxInputLength = 1;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 30;
+            this.dataGridViewButtonColumn16.HeaderText = "0";
+            this.dataGridViewButtonColumn16.Name = "dataGridViewButtonColumn16";
+            this.dataGridViewButtonColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn16.Width = 30;
             // 
             // label2
             // 
@@ -504,6 +801,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button_Start);
+            this.groupBox2.Controls.Add(this.comboBox_Type);
+            this.groupBox2.Controls.Add(this.button_Tact);
             this.groupBox2.Controls.Add(this.dataGridView4);
             this.groupBox2.Controls.Add(this.dataGridView3);
             this.groupBox2.Controls.Add(this.label4);
@@ -514,6 +814,38 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Результаты вычисления";
+            // 
+            // button_Start
+            // 
+            this.button_Start.Location = new System.Drawing.Point(640, 16);
+            this.button_Start.Name = "button_Start";
+            this.button_Start.Size = new System.Drawing.Size(121, 23);
+            this.button_Start.TabIndex = 10;
+            this.button_Start.Text = "Старт";
+            this.button_Start.UseVisualStyleBackColor = true;
+            this.button_Start.Click += new System.EventHandler(this.button_Start_Click);
+            // 
+            // comboBox_Type
+            // 
+            this.comboBox_Type.FormattingEnabled = true;
+            this.comboBox_Type.Items.AddRange(new object[] {
+            "Моделирование на уровне МП",
+            "Моделирование на уровне ОУ"});
+            this.comboBox_Type.Location = new System.Drawing.Point(640, 71);
+            this.comboBox_Type.Name = "comboBox_Type";
+            this.comboBox_Type.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Type.TabIndex = 9;
+            this.comboBox_Type.SelectedIndexChanged += new System.EventHandler(this.comboBox_Type_SelectedIndexChanged);
+            // 
+            // button_Tact
+            // 
+            this.button_Tact.Location = new System.Drawing.Point(640, 45);
+            this.button_Tact.Name = "button_Tact";
+            this.button_Tact.Size = new System.Drawing.Size(121, 23);
+            this.button_Tact.TabIndex = 8;
+            this.button_Tact.Text = "Такт";
+            this.button_Tact.UseVisualStyleBackColor = true;
+            this.button_Tact.Click += new System.EventHandler(this.button_Tact_Click);
             // 
             // dataGridView4
             // 
@@ -538,6 +870,15 @@
             this.dataGridViewTextBoxColumn46,
             this.dataGridViewTextBoxColumn47,
             this.dataGridViewTextBoxColumn48});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.NullValue = "0";
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView4.Location = new System.Drawing.Point(52, 84);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
@@ -699,6 +1040,15 @@
             this.dataGridViewTextBoxColumn30,
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.NullValue = "0";
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView3.Location = new System.Drawing.Point(52, 29);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
@@ -857,234 +1207,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "A";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(472, 101);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(472, 316);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(472, 664);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(472, 887);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(472, 999);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(472, 1106);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(472, 1210);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(14, 13);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(472, 1420);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(14, 13);
-            this.radioButton8.TabIndex = 7;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(472, 1525);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(14, 13);
-            this.radioButton9.TabIndex = 8;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(472, 1736);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(14, 13);
-            this.radioButton10.TabIndex = 9;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(472, 1939);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(14, 13);
-            this.radioButton11.TabIndex = 10;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(472, 2166);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(14, 13);
-            this.radioButton12.TabIndex = 11;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(544, 265);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(544, 614);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 13;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(544, 838);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 14;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(794, 838);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(544, 948);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(544, 1057);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 17;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(544, 1155);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(544, 1376);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 19;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(544, 1480);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 20;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(544, 1686);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 21;
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(544, 1895);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 22;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(544, 2105);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 23;
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1095,6 +1217,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Моделирование-Курсовая Работа-2 Вариант-Анисимов Г.А. 3-ИАИТ-3";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1117,40 +1240,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_0;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
@@ -1212,6 +1301,43 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button_Tact;
+        private System.Windows.Forms.ComboBox comboBox_Type;
+        private System.Windows.Forms.DataGridViewButtonColumn col_15;
+        private System.Windows.Forms.DataGridViewButtonColumn col_14;
+        private System.Windows.Forms.DataGridViewButtonColumn col_13;
+        private System.Windows.Forms.DataGridViewButtonColumn col_12;
+        private System.Windows.Forms.DataGridViewButtonColumn col_11;
+        private System.Windows.Forms.DataGridViewButtonColumn col_10;
+        private System.Windows.Forms.DataGridViewButtonColumn col_9;
+        private System.Windows.Forms.DataGridViewButtonColumn col_8;
+        private System.Windows.Forms.DataGridViewButtonColumn col_7;
+        private System.Windows.Forms.DataGridViewButtonColumn col_6;
+        private System.Windows.Forms.DataGridViewButtonColumn col_5;
+        private System.Windows.Forms.DataGridViewButtonColumn col_4;
+        private System.Windows.Forms.DataGridViewButtonColumn col_3;
+        private System.Windows.Forms.DataGridViewButtonColumn col_2;
+        private System.Windows.Forms.DataGridViewButtonColumn col_1;
+        private System.Windows.Forms.DataGridViewButtonColumn col_0;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn3;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn4;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn5;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn6;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn7;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn8;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn9;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn10;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn11;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn12;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn13;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn14;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn15;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn16;
+        private System.Windows.Forms.Button button_Start;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
