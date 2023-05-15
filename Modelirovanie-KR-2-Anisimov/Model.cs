@@ -24,21 +24,23 @@ namespace Modelirovanie_KR_2_Anisimov
             PP = false;
             microOperations = new Action[]
             {
-                () => { _C = (ushort) (_A << 1 >> 1); }, // y1
-                () => { _A = (ushort)(_B << 1 >> 1); }, // y2
+                () => { _C = (uint) _A & 0x7FFF; }, // y1
+                () => { _A = (ushort) (_B & 0x7FFF); }, // y2
                 () => {
-                    ushort buff = (ushort)(~(_A << 1 >> 1) + 1);
+                    var buff = (ushort) ~(_A & 0x7FFF);
                     buff += 0xc000;
-                    _C += (ushort) buff;
-                    _C+=1;
+                    _C = _C + buff + 1;
                 }, // y3
                 () =>  { PP = true; }, // y4
-                () => { _C +=  (ushort) (_A << 1 >> 1); }, // y5
-                () => { _C = (ushort)(_C << 1); }, // y6
+                () => { _C +=  (uint) _A & 0x7FFF; }, // y5
+                () => { _C = _C << 1; }, // y6
                 () => { _Count = 0; }, //y7
                 () => { _B = 0; }, // y8
-                () => {  }, // y9
-                () => { _Count -= 1; }, // y10
+                () => { 
+                    ushort number = (ushort)((_C << 15 >> 31) == 1 ? 0 : 1);
+
+                }, // y9
+                () => { _Count = (byte)(_Count == 0 ? 15 : _Count - 1); }, // y10
                 () => { _C = _B; }, // y11
                 () => { _C += 2; }, // y12
                 () => { _C = _C | 0x10000; }, // y13

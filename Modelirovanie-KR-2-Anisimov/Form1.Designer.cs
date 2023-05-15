@@ -30,55 +30,39 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.checkBox_12 = new System.Windows.Forms.CheckBox();
+            this.checkBox_11 = new System.Windows.Forms.CheckBox();
+            this.checkBox_10 = new System.Windows.Forms.CheckBox();
+            this.checkBox_9 = new System.Windows.Forms.CheckBox();
+            this.checkBox_8 = new System.Windows.Forms.CheckBox();
+            this.checkBox_7 = new System.Windows.Forms.CheckBox();
+            this.checkBox_6 = new System.Windows.Forms.CheckBox();
+            this.checkBox_5 = new System.Windows.Forms.CheckBox();
+            this.checkBox_4 = new System.Windows.Forms.CheckBox();
+            this.checkBox_3 = new System.Windows.Forms.CheckBox();
+            this.checkBox_2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_1 = new System.Windows.Forms.CheckBox();
+            this.radioButton_A0_1 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A10 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A9 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A8 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A7 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A6 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A5 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A4 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A3 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A2 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A1 = new System.Windows.Forms.RadioButton();
+            this.radioButton_A0 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.col_15 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_14 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_13 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_12 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_11 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_10 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_9 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_8 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_7 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_5 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_4 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_0 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -139,6 +123,22 @@
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.col_15 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_14 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_13 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_12 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_11 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_10 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_5 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_0 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -154,263 +154,263 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.checkBox12);
-            this.panel1.Controls.Add(this.checkBox11);
-            this.panel1.Controls.Add(this.checkBox10);
-            this.panel1.Controls.Add(this.checkBox9);
-            this.panel1.Controls.Add(this.checkBox8);
-            this.panel1.Controls.Add(this.checkBox7);
-            this.panel1.Controls.Add(this.checkBox6);
-            this.panel1.Controls.Add(this.checkBox5);
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.checkBox2);
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.radioButton12);
-            this.panel1.Controls.Add(this.radioButton11);
-            this.panel1.Controls.Add(this.radioButton10);
-            this.panel1.Controls.Add(this.radioButton9);
-            this.panel1.Controls.Add(this.radioButton8);
-            this.panel1.Controls.Add(this.radioButton7);
-            this.panel1.Controls.Add(this.radioButton6);
-            this.panel1.Controls.Add(this.radioButton5);
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.checkBox_12);
+            this.panel1.Controls.Add(this.checkBox_11);
+            this.panel1.Controls.Add(this.checkBox_10);
+            this.panel1.Controls.Add(this.checkBox_9);
+            this.panel1.Controls.Add(this.checkBox_8);
+            this.panel1.Controls.Add(this.checkBox_7);
+            this.panel1.Controls.Add(this.checkBox_6);
+            this.panel1.Controls.Add(this.checkBox_5);
+            this.panel1.Controls.Add(this.checkBox_4);
+            this.panel1.Controls.Add(this.checkBox_3);
+            this.panel1.Controls.Add(this.checkBox_2);
+            this.panel1.Controls.Add(this.checkBox_1);
+            this.panel1.Controls.Add(this.radioButton_A0_1);
+            this.panel1.Controls.Add(this.radioButton_A10);
+            this.panel1.Controls.Add(this.radioButton_A9);
+            this.panel1.Controls.Add(this.radioButton_A8);
+            this.panel1.Controls.Add(this.radioButton_A7);
+            this.panel1.Controls.Add(this.radioButton_A6);
+            this.panel1.Controls.Add(this.radioButton_A5);
+            this.panel1.Controls.Add(this.radioButton_A4);
+            this.panel1.Controls.Add(this.radioButton_A3);
+            this.panel1.Controls.Add(this.radioButton_A2);
+            this.panel1.Controls.Add(this.radioButton_A1);
+            this.panel1.Controls.Add(this.radioButton_A0);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(519, 757);
             this.panel1.TabIndex = 0;
             // 
-            // checkBox12
+            // checkBox_12
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(544, 2105);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 23;
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox_12.AutoSize = true;
+            this.checkBox_12.Location = new System.Drawing.Point(544, 2105);
+            this.checkBox_12.Name = "checkBox_12";
+            this.checkBox_12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_12.TabIndex = 23;
+            this.checkBox_12.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // checkBox_11
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(544, 1895);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 22;
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox_11.AutoSize = true;
+            this.checkBox_11.Location = new System.Drawing.Point(544, 1895);
+            this.checkBox_11.Name = "checkBox_11";
+            this.checkBox_11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_11.TabIndex = 22;
+            this.checkBox_11.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // checkBox_10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(544, 1686);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 21;
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox_10.AutoSize = true;
+            this.checkBox_10.Location = new System.Drawing.Point(544, 1686);
+            this.checkBox_10.Name = "checkBox_10";
+            this.checkBox_10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_10.TabIndex = 21;
+            this.checkBox_10.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // checkBox_9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(544, 1480);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 20;
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox_9.AutoSize = true;
+            this.checkBox_9.Location = new System.Drawing.Point(544, 1480);
+            this.checkBox_9.Name = "checkBox_9";
+            this.checkBox_9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_9.TabIndex = 20;
+            this.checkBox_9.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBox_8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(544, 1376);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 19;
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox_8.AutoSize = true;
+            this.checkBox_8.Location = new System.Drawing.Point(544, 1376);
+            this.checkBox_8.Name = "checkBox_8";
+            this.checkBox_8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_8.TabIndex = 19;
+            this.checkBox_8.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBox_7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(544, 1155);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox_7.AutoSize = true;
+            this.checkBox_7.Location = new System.Drawing.Point(544, 1155);
+            this.checkBox_7.Name = "checkBox_7";
+            this.checkBox_7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_7.TabIndex = 18;
+            this.checkBox_7.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkBox_6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(544, 1057);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 17;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox_6.AutoSize = true;
+            this.checkBox_6.Location = new System.Drawing.Point(544, 1057);
+            this.checkBox_6.Name = "checkBox_6";
+            this.checkBox_6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_6.TabIndex = 17;
+            this.checkBox_6.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBox_5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(544, 948);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox_5.AutoSize = true;
+            this.checkBox_5.Location = new System.Drawing.Point(544, 948);
+            this.checkBox_5.Name = "checkBox_5";
+            this.checkBox_5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_5.TabIndex = 16;
+            this.checkBox_5.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBox_4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(794, 838);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox_4.AutoSize = true;
+            this.checkBox_4.Location = new System.Drawing.Point(794, 838);
+            this.checkBox_4.Name = "checkBox_4";
+            this.checkBox_4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_4.TabIndex = 15;
+            this.checkBox_4.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBox_3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(544, 838);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 14;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox_3.AutoSize = true;
+            this.checkBox_3.Location = new System.Drawing.Point(544, 838);
+            this.checkBox_3.Name = "checkBox_3";
+            this.checkBox_3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_3.TabIndex = 14;
+            this.checkBox_3.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBox_2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(544, 614);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 13;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox_2.AutoSize = true;
+            this.checkBox_2.Location = new System.Drawing.Point(544, 614);
+            this.checkBox_2.Name = "checkBox_2";
+            this.checkBox_2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_2.TabIndex = 13;
+            this.checkBox_2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // checkBox_1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(544, 265);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox_1.AutoSize = true;
+            this.checkBox_1.Location = new System.Drawing.Point(544, 265);
+            this.checkBox_1.Name = "checkBox_1";
+            this.checkBox_1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox_1.TabIndex = 12;
+            this.checkBox_1.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // radioButton_A0_1
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(472, 2166);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(14, 13);
-            this.radioButton12.TabIndex = 11;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton_A0_1.AutoSize = true;
+            this.radioButton_A0_1.Location = new System.Drawing.Point(472, 2166);
+            this.radioButton_A0_1.Name = "radioButton_A0_1";
+            this.radioButton_A0_1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A0_1.TabIndex = 11;
+            this.radioButton_A0_1.TabStop = true;
+            this.radioButton_A0_1.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // radioButton_A10
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(472, 1939);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(14, 13);
-            this.radioButton11.TabIndex = 10;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton_A10.AutoSize = true;
+            this.radioButton_A10.Location = new System.Drawing.Point(472, 1939);
+            this.radioButton_A10.Name = "radioButton_A10";
+            this.radioButton_A10.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A10.TabIndex = 10;
+            this.radioButton_A10.TabStop = true;
+            this.radioButton_A10.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // radioButton_A9
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(472, 1736);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(14, 13);
-            this.radioButton10.TabIndex = 9;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton_A9.AutoSize = true;
+            this.radioButton_A9.Location = new System.Drawing.Point(472, 1736);
+            this.radioButton_A9.Name = "radioButton_A9";
+            this.radioButton_A9.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A9.TabIndex = 9;
+            this.radioButton_A9.TabStop = true;
+            this.radioButton_A9.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // radioButton_A8
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(472, 1525);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(14, 13);
-            this.radioButton9.TabIndex = 8;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton_A8.AutoSize = true;
+            this.radioButton_A8.Location = new System.Drawing.Point(472, 1525);
+            this.radioButton_A8.Name = "radioButton_A8";
+            this.radioButton_A8.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A8.TabIndex = 8;
+            this.radioButton_A8.TabStop = true;
+            this.radioButton_A8.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // radioButton_A7
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(472, 1420);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(14, 13);
-            this.radioButton8.TabIndex = 7;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton_A7.AutoSize = true;
+            this.radioButton_A7.Location = new System.Drawing.Point(472, 1420);
+            this.radioButton_A7.Name = "radioButton_A7";
+            this.radioButton_A7.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A7.TabIndex = 7;
+            this.radioButton_A7.TabStop = true;
+            this.radioButton_A7.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // radioButton_A6
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(472, 1210);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(14, 13);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton_A6.AutoSize = true;
+            this.radioButton_A6.Location = new System.Drawing.Point(472, 1210);
+            this.radioButton_A6.Name = "radioButton_A6";
+            this.radioButton_A6.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A6.TabIndex = 6;
+            this.radioButton_A6.TabStop = true;
+            this.radioButton_A6.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButton_A5
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(472, 1106);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton_A5.AutoSize = true;
+            this.radioButton_A5.Location = new System.Drawing.Point(472, 1106);
+            this.radioButton_A5.Name = "radioButton_A5";
+            this.radioButton_A5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A5.TabIndex = 4;
+            this.radioButton_A5.TabStop = true;
+            this.radioButton_A5.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton_A4
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(472, 999);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton_A4.AutoSize = true;
+            this.radioButton_A4.Location = new System.Drawing.Point(472, 999);
+            this.radioButton_A4.Name = "radioButton_A4";
+            this.radioButton_A4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A4.TabIndex = 5;
+            this.radioButton_A4.TabStop = true;
+            this.radioButton_A4.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButton_A3
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(472, 887);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton_A3.AutoSize = true;
+            this.radioButton_A3.Location = new System.Drawing.Point(472, 887);
+            this.radioButton_A3.Name = "radioButton_A3";
+            this.radioButton_A3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A3.TabIndex = 4;
+            this.radioButton_A3.TabStop = true;
+            this.radioButton_A3.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton_A2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(472, 664);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_A2.AutoSize = true;
+            this.radioButton_A2.Location = new System.Drawing.Point(472, 664);
+            this.radioButton_A2.Name = "radioButton_A2";
+            this.radioButton_A2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A2.TabIndex = 3;
+            this.radioButton_A2.TabStop = true;
+            this.radioButton_A2.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_A1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(472, 316);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_A1.AutoSize = true;
+            this.radioButton_A1.Location = new System.Drawing.Point(472, 316);
+            this.radioButton_A1.Name = "radioButton_A1";
+            this.radioButton_A1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A1.TabIndex = 2;
+            this.radioButton_A1.TabStop = true;
+            this.radioButton_A1.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButton_A0
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(472, 101);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_A0.AutoSize = true;
+            this.radioButton_A0.Location = new System.Drawing.Point(472, 101);
+            this.radioButton_A0.Name = "radioButton_A0";
+            this.radioButton_A0.Size = new System.Drawing.Size(14, 13);
+            this.radioButton_A0.TabIndex = 1;
+            this.radioButton_A0.TabStop = true;
+            this.radioButton_A0.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -463,136 +463,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(524, 47);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.updateValueOfCell);
-            // 
-            // col_15
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "0";
-            this.col_15.DefaultCellStyle = dataGridViewCellStyle1;
-            this.col_15.HeaderText = "15";
-            this.col_15.Name = "col_15";
-            this.col_15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_15.Width = 30;
-            // 
-            // col_14
-            // 
-            this.col_14.HeaderText = "14";
-            this.col_14.Name = "col_14";
-            this.col_14.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_14.Width = 30;
-            // 
-            // col_13
-            // 
-            this.col_13.HeaderText = "13";
-            this.col_13.Name = "col_13";
-            this.col_13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_13.Width = 30;
-            // 
-            // col_12
-            // 
-            this.col_12.HeaderText = "12";
-            this.col_12.Name = "col_12";
-            this.col_12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_12.Width = 30;
-            // 
-            // col_11
-            // 
-            this.col_11.HeaderText = "11";
-            this.col_11.Name = "col_11";
-            this.col_11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_11.Width = 30;
-            // 
-            // col_10
-            // 
-            this.col_10.HeaderText = "10";
-            this.col_10.Name = "col_10";
-            this.col_10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_10.Width = 30;
-            // 
-            // col_9
-            // 
-            this.col_9.HeaderText = "9";
-            this.col_9.Name = "col_9";
-            this.col_9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_9.Width = 30;
-            // 
-            // col_8
-            // 
-            this.col_8.HeaderText = "8";
-            this.col_8.Name = "col_8";
-            this.col_8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_8.Width = 30;
-            // 
-            // col_7
-            // 
-            this.col_7.HeaderText = "7";
-            this.col_7.Name = "col_7";
-            this.col_7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_7.Width = 30;
-            // 
-            // col_6
-            // 
-            this.col_6.HeaderText = "6";
-            this.col_6.Name = "col_6";
-            this.col_6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_6.Width = 30;
-            // 
-            // col_5
-            // 
-            this.col_5.HeaderText = "5";
-            this.col_5.Name = "col_5";
-            this.col_5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_5.Width = 30;
-            // 
-            // col_4
-            // 
-            this.col_4.HeaderText = "4";
-            this.col_4.Name = "col_4";
-            this.col_4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_4.Width = 30;
-            // 
-            // col_3
-            // 
-            this.col_3.HeaderText = "3";
-            this.col_3.Name = "col_3";
-            this.col_3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_3.Width = 30;
-            // 
-            // col_2
-            // 
-            this.col_2.HeaderText = "2";
-            this.col_2.Name = "col_2";
-            this.col_2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_2.Width = 30;
-            // 
-            // col_1
-            // 
-            this.col_1.HeaderText = "1";
-            this.col_1.Name = "col_1";
-            this.col_1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_1.Width = 30;
-            // 
-            // col_0
-            // 
-            this.col_0.HeaderText = "0";
-            this.col_0.Name = "col_0";
-            this.col_0.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_0.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_0.Width = 30;
             // 
             // groupBox1
             // 
@@ -1207,6 +1077,136 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "A";
             // 
+            // col_15
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "0";
+            this.col_15.DefaultCellStyle = dataGridViewCellStyle1;
+            this.col_15.HeaderText = "15";
+            this.col_15.Name = "col_15";
+            this.col_15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_15.Width = 30;
+            // 
+            // col_14
+            // 
+            this.col_14.HeaderText = "14";
+            this.col_14.Name = "col_14";
+            this.col_14.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_14.Width = 30;
+            // 
+            // col_13
+            // 
+            this.col_13.HeaderText = "13";
+            this.col_13.Name = "col_13";
+            this.col_13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_13.Width = 30;
+            // 
+            // col_12
+            // 
+            this.col_12.HeaderText = "12";
+            this.col_12.Name = "col_12";
+            this.col_12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_12.Width = 30;
+            // 
+            // col_11
+            // 
+            this.col_11.HeaderText = "11";
+            this.col_11.Name = "col_11";
+            this.col_11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_11.Width = 30;
+            // 
+            // col_10
+            // 
+            this.col_10.HeaderText = "10";
+            this.col_10.Name = "col_10";
+            this.col_10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_10.Width = 30;
+            // 
+            // col_9
+            // 
+            this.col_9.HeaderText = "9";
+            this.col_9.Name = "col_9";
+            this.col_9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_9.Width = 30;
+            // 
+            // col_8
+            // 
+            this.col_8.HeaderText = "8";
+            this.col_8.Name = "col_8";
+            this.col_8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_8.Width = 30;
+            // 
+            // col_7
+            // 
+            this.col_7.HeaderText = "7";
+            this.col_7.Name = "col_7";
+            this.col_7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_7.Width = 30;
+            // 
+            // col_6
+            // 
+            this.col_6.HeaderText = "6";
+            this.col_6.Name = "col_6";
+            this.col_6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_6.Width = 30;
+            // 
+            // col_5
+            // 
+            this.col_5.HeaderText = "5";
+            this.col_5.Name = "col_5";
+            this.col_5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_5.Width = 30;
+            // 
+            // col_4
+            // 
+            this.col_4.HeaderText = "4";
+            this.col_4.Name = "col_4";
+            this.col_4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_4.Width = 30;
+            // 
+            // col_3
+            // 
+            this.col_3.HeaderText = "3";
+            this.col_3.Name = "col_3";
+            this.col_3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_3.Width = 30;
+            // 
+            // col_2
+            // 
+            this.col_2.HeaderText = "2";
+            this.col_2.Name = "col_2";
+            this.col_2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_2.Width = 30;
+            // 
+            // col_1
+            // 
+            this.col_1.HeaderText = "1";
+            this.col_1.Name = "col_1";
+            this.col_1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_1.Width = 30;
+            // 
+            // col_0
+            // 
+            this.col_0.HeaderText = "0";
+            this.col_0.Name = "col_0";
+            this.col_0.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.col_0.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_0.Width = 30;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1277,48 +1277,32 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.CheckBox checkBox_12;
+        private System.Windows.Forms.CheckBox checkBox_11;
+        private System.Windows.Forms.CheckBox checkBox_10;
+        private System.Windows.Forms.CheckBox checkBox_9;
+        private System.Windows.Forms.CheckBox checkBox_8;
+        private System.Windows.Forms.CheckBox checkBox_7;
+        private System.Windows.Forms.CheckBox checkBox_6;
+        private System.Windows.Forms.CheckBox checkBox_5;
+        private System.Windows.Forms.CheckBox checkBox_4;
+        private System.Windows.Forms.CheckBox checkBox_3;
+        private System.Windows.Forms.CheckBox checkBox_2;
+        private System.Windows.Forms.CheckBox checkBox_1;
+        private System.Windows.Forms.RadioButton radioButton_A0_1;
+        private System.Windows.Forms.RadioButton radioButton_A10;
+        private System.Windows.Forms.RadioButton radioButton_A9;
+        private System.Windows.Forms.RadioButton radioButton_A8;
+        private System.Windows.Forms.RadioButton radioButton_A7;
+        private System.Windows.Forms.RadioButton radioButton_A6;
+        private System.Windows.Forms.RadioButton radioButton_A5;
+        private System.Windows.Forms.RadioButton radioButton_A4;
+        private System.Windows.Forms.RadioButton radioButton_A3;
+        private System.Windows.Forms.RadioButton radioButton_A2;
+        private System.Windows.Forms.RadioButton radioButton_A1;
+        private System.Windows.Forms.RadioButton radioButton_A0;
         private System.Windows.Forms.Button button_Tact;
         private System.Windows.Forms.ComboBox comboBox_Type;
-        private System.Windows.Forms.DataGridViewButtonColumn col_15;
-        private System.Windows.Forms.DataGridViewButtonColumn col_14;
-        private System.Windows.Forms.DataGridViewButtonColumn col_13;
-        private System.Windows.Forms.DataGridViewButtonColumn col_12;
-        private System.Windows.Forms.DataGridViewButtonColumn col_11;
-        private System.Windows.Forms.DataGridViewButtonColumn col_10;
-        private System.Windows.Forms.DataGridViewButtonColumn col_9;
-        private System.Windows.Forms.DataGridViewButtonColumn col_8;
-        private System.Windows.Forms.DataGridViewButtonColumn col_7;
-        private System.Windows.Forms.DataGridViewButtonColumn col_6;
-        private System.Windows.Forms.DataGridViewButtonColumn col_5;
-        private System.Windows.Forms.DataGridViewButtonColumn col_4;
-        private System.Windows.Forms.DataGridViewButtonColumn col_3;
-        private System.Windows.Forms.DataGridViewButtonColumn col_2;
-        private System.Windows.Forms.DataGridViewButtonColumn col_1;
-        private System.Windows.Forms.DataGridViewButtonColumn col_0;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
@@ -1338,6 +1322,22 @@
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn16;
         private System.Windows.Forms.Button button_Start;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewButtonColumn col_15;
+        private System.Windows.Forms.DataGridViewButtonColumn col_14;
+        private System.Windows.Forms.DataGridViewButtonColumn col_13;
+        private System.Windows.Forms.DataGridViewButtonColumn col_12;
+        private System.Windows.Forms.DataGridViewButtonColumn col_11;
+        private System.Windows.Forms.DataGridViewButtonColumn col_10;
+        private System.Windows.Forms.DataGridViewButtonColumn col_9;
+        private System.Windows.Forms.DataGridViewButtonColumn col_8;
+        private System.Windows.Forms.DataGridViewButtonColumn col_7;
+        private System.Windows.Forms.DataGridViewButtonColumn col_6;
+        private System.Windows.Forms.DataGridViewButtonColumn col_5;
+        private System.Windows.Forms.DataGridViewButtonColumn col_4;
+        private System.Windows.Forms.DataGridViewButtonColumn col_3;
+        private System.Windows.Forms.DataGridViewButtonColumn col_2;
+        private System.Windows.Forms.DataGridViewButtonColumn col_1;
+        private System.Windows.Forms.DataGridViewButtonColumn col_0;
     }
 }
 
