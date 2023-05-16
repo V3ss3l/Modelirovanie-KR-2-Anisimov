@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modelirovanie_KR_2_Anisimov
 {
@@ -36,11 +32,13 @@ namespace Modelirovanie_KR_2_Anisimov
                 () => { _C = _C << 1; }, // y6
                 () => { _Count = 0; }, //y7
                 () => { _B = 0; }, // y8
-                () => { 
+                () => {
                     ushort number = (ushort)((_C << 15 >> 31) == 1 ? 0 : 1);
+                    _B = (ushort)((_B << 1) + number);
 
                 }, // y9
-                () => { _Count = (byte)(_Count == 0 ? 15 : _Count - 1); }, // y10
+                () => { _Count = (byte)(_Count - 1);
+                /*(byte)(_Count == 0 ? 15 :*/ }, // y10
                 () => { _C = _B; }, // y11
                 () => { _C += 2; }, // y12
                 () => { _C = _C | 0x10000; }, // y13
@@ -48,7 +46,7 @@ namespace Modelirovanie_KR_2_Anisimov
             };
         }
 
-        public bool X1() { return ((ushort)(_A << 1 >> 1) & 0x7FFF) == 0; } 
+        public bool X1() { return ((ushort)(_A << 1 >> 1) & 0x7FFF) == 0; }
 
         public bool X2() { return (_C & 0xFFFFFFFF) == 0; }
 

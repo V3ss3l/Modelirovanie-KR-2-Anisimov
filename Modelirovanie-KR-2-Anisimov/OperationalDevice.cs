@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modelirovanie_KR_2_Anisimov
 {
@@ -15,6 +11,7 @@ namespace Modelirovanie_KR_2_Anisimov
         private bool[] _operations; // Y1, Y2, Y3, ...
         private bool _PP;
         private Form1 _form;
+        private Model _model;
 
         public OperationalDevice(Form1 form)
         {
@@ -24,6 +21,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _conditions = new bool[7];
             _operations = new bool[12];
             _form = form;
+            _model = new Model(_form.ConvertDataToNumbers());
         }
 
         public void Tact()
@@ -34,15 +32,16 @@ namespace Modelirovanie_KR_2_Anisimov
         }
 
         public void StateMemory()
-        { 
+        {
             //int stateIndex = BinToDec(stateCode.ToString());
             _states[_prevState] = false;
             _states[_currentState] = true;
             _prevState = _currentState;
         }
 
-        public void ConditionMemory() { 
-            
+        public void ConditionMemory()
+        {
+
         }
 
         public int Decoder()
