@@ -55,6 +55,16 @@ namespace Modelirovanie_KR_2_Anisimov
             ResetCellsValues();
         }
 
+        public void UpdateResultGrids(ushort A, ushort B, uint C, byte Count)
+        {
+            var result = Convert.ToString(A, 2).PadLeft(16, '0');
+            for (int i = dataGridView_A_Result.ColumnCount - 1; i > 0; i--)
+            {
+                /*dataGridView_A_Result.Rows[0].Cells[i].Value = result[a];
+                dataGridView_A_Result.UpdateCellValue(i, 0);*/
+            }
+        }
+
         public void UncheckAllButtonInMP()
         {
             foreach (CheckBox checkBox in CheckBoxArr)
@@ -153,6 +163,24 @@ namespace Modelirovanie_KR_2_Anisimov
                     _mp.MicroProgramm();
                 }
                 IsFinished = false;
+            }
+        }
+
+        private void button_clear_A_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dataGrid_A.ColumnCount - 1; i++)
+            {
+                dataGrid_A[i, 0].Value = 0;
+                dataGrid_A.UpdateCellValue(i, 0);
+            }
+        }
+
+        private void button_clear_B_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dataGrid_B.ColumnCount - 1; i++)
+            {
+                dataGrid_B[i, 0].Value = 0;
+                dataGrid_B.UpdateCellValue(i, 0);
             }
         }
     }

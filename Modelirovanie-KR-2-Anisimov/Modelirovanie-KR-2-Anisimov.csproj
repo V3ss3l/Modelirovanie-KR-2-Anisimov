@@ -86,6 +86,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Pictures\ГСА-вар-3.drawio.png" />
+    <Content Include="Pictures\Схема ОУ.drawio.png" />
     <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -121,4 +121,7 @@
   <data name="ГСА_вар_3_drawio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\ГСА-вар-3.drawio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Схема_ОУ_drawio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Схема ОУ.drawio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

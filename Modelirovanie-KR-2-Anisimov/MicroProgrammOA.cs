@@ -10,17 +10,18 @@ namespace Modelirovanie_KR_2_Anisimov
         public MicroProgrammOA(Form1 form1)
         {
             _form = form1;
+            //ushort[] arr = new ushort[] { 1, 4 };
             var arr = _form.ConvertDataToNumbers();
             _model = new Model(arr);
             _state = 0;
         }
         public void MicroProgramm()
         {
+            _form.UncheckAllButtonInMP();
             switch (_state)
             {
                 case 0:
                     {
-                        _form.UncheckAllButtonInMP();
                         _form.RadioButtonArr[0].Checked = true;
                         _model.microOperations[0]();
                         _model.microOperations[1]();
@@ -31,7 +32,6 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 1:
                     {
-                        _form.UncheckAllButtonInMP();
                         _form.RadioButtonArr[1].Checked = true;
                         if (!_model.X1())
                         {
@@ -57,7 +57,6 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 2:
                     {
-                        _form.UncheckAllButtonInMP();
                         _form.RadioButtonArr[2].Checked = true;
                         if (_model.X3())
                         {
@@ -77,7 +76,6 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 3:
                     {
-                        _form.UncheckAllButtonInMP();
                         _form.RadioButtonArr[3].Checked = true;
                         _model.microOperations[5]();
                         _model.microOperations[6]();
@@ -89,7 +87,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 4:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[4].Checked = true;
                         _model.microOperations[2]();
                         Thread.Sleep(500);
@@ -99,7 +97,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 5:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[5].Checked = true;
                         _model.microOperations[8]();
                         Thread.Sleep(500);
@@ -109,7 +107,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 6:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[6].Checked = true;
                         if (_model.X3())
                         {
@@ -130,7 +128,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 7:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[7].Checked = true;
                         _model.microOperations[5]();
                         _model.microOperations[9]();
@@ -141,7 +139,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 8:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[8].Checked = true;
                         if (_model.X4())
                         {
@@ -161,7 +159,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 9:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[9].Checked = true;
                         if (_model.X5())
                         {
@@ -185,7 +183,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 10:
                     {
-                        _form.UncheckAllButtonInMP();
+
                         _form.RadioButtonArr[10].Checked = true;
                         if (_model.X6())
                         {
@@ -199,7 +197,6 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
                 case 11:
                     {
-                        _form.UncheckAllButtonInMP();
                         _form.RadioButtonArr[11].Checked = true;
                         _state = 0;
                         _form.IsFinished = true;
@@ -208,6 +205,7 @@ namespace Modelirovanie_KR_2_Anisimov
                     }
 
             }
+            _form.UpdateResultGrids(_model.A, _model.B, _model.C, _model.Count);
         }
     }
 }
