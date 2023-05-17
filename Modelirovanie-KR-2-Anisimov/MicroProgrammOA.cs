@@ -10,11 +10,20 @@ namespace Modelirovanie_KR_2_Anisimov
         public MicroProgrammOA(Form1 form1)
         {
             _form = form1;
-            //ushort[] arr = new ushort[] { 1, 4 };
             var arr = _form.ConvertDataToNumbers();
             _model = new Model(arr);
             _state = 0;
         }
+        
+        public void AutoModeMP(bool flag)
+        {
+            while(!flag)
+            {
+                MicroProgramm();
+            }
+            _form.IsFinished = false;
+        }
+
         public void MicroProgramm()
         {
             _form.UncheckAllButtonInMP();

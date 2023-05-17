@@ -37,7 +37,7 @@ namespace Modelirovanie_KR_2_Anisimov
 
         public void ResetCellsValues()
         {
-            for (int i = 0; i < dataGrid_A.ColumnCount - 1; i++)
+            for (int i = 0; i < dataGrid_A.ColumnCount; i++)
             {
                 dataGrid_A[i, 0].Value = 0;
                 dataGrid_A.UpdateCellValue(i, 0);
@@ -49,6 +49,7 @@ namespace Modelirovanie_KR_2_Anisimov
         public void FinishModel()
         {
             MessageBox.Show("Моделирование закончено!");
+            IsFinished = true;
             button_Start.Enabled = true;
             button_Tact.Enabled = false;
             UncheckAllButtonInMP();
@@ -58,10 +59,31 @@ namespace Modelirovanie_KR_2_Anisimov
         public void UpdateResultGrids(ushort A, ushort B, uint C, byte Count)
         {
             var result = Convert.ToString(A, 2).PadLeft(16, '0');
-            for (int i = dataGridView_A_Result.ColumnCount - 1; i > 0; i--)
+            for (int i = 0, a = 0; i < dataGridView_A_Result.ColumnCount; i++, a++)
             {
-                /*dataGridView_A_Result.Rows[0].Cells[i].Value = result[a];
-                dataGridView_A_Result.UpdateCellValue(i, 0);*/
+                dataGridView_A_Result.Rows[0].Cells[i].Value = result[a];
+                dataGridView_A_Result.UpdateCellValue(i, 0);
+            }
+
+            result = Convert.ToString(B, 2).PadLeft(16, '0');
+            for (int i = 0, b = 0; i < dataGridView_B_Result.ColumnCount; i++, b++)
+            {
+                dataGridView_B_Result.Rows[0].Cells[i].Value = result[b];
+                dataGridView_B_Result.UpdateCellValue(i, 0);
+            }
+
+            result = Convert.ToString(C, 2).PadLeft(32, '0');
+            for (int i = 0, c = 0; i < dataGridView_C_Result.ColumnCount; i++, c++)
+            {
+                dataGridView_C_Result.Rows[0].Cells[i].Value = result[c];
+                dataGridView_C_Result.UpdateCellValue(i, 0);
+            }
+
+            result = Convert.ToString(Count, 2).PadLeft(4, '0');
+            for (int i = 0, count = 0; i < dataGridView_Count_Result.ColumnCount; i++, count++)
+            {
+                dataGridView_Count_Result.Rows[0].Cells[i].Value = result[count];
+                dataGridView_Count_Result.UpdateCellValue(i, 0);
             }
         }
 
@@ -81,7 +103,7 @@ namespace Modelirovanie_KR_2_Anisimov
         {
             string str_1 = "";
             string str_2 = "";
-            for (int i = 0; i < dataGrid_A.ColumnCount - 1; i++)
+            for (int i = 0; i < dataGrid_A.ColumnCount; i++)
             {
                 str_1 += dataGrid_A[i, 0].Value.ToString();
                 str_2 += dataGrid_B[i, 0].Value.ToString();
@@ -96,8 +118,8 @@ namespace Modelirovanie_KR_2_Anisimov
         {
             if (_type)
             {
-
                 // здесь будет происходит моделирование на уровне операционного устройства
+                _device.Tact();
             }
             else
             {
@@ -157,12 +179,7 @@ namespace Modelirovanie_KR_2_Anisimov
             {
                 // здесь будет происходит моделирование на уровне микропрограммы
                 _mp = new MicroProgrammOA(this);
-                while (!IsFinished)
-                {
-                    Thread.Sleep(1000);
-                    _mp.MicroProgramm();
-                }
-                IsFinished = false;
+                _mp.AutoModeMP(IsFinished);
             }
         }
 
