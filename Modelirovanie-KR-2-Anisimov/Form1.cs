@@ -14,7 +14,7 @@ namespace Modelirovanie_KR_2_Anisimov
         public CheckBox[] CheckBoxArr { get; set; }
         public RadioButton[] RadioButtonArr { get; set; }
 
-        public Boolean IsFinished { get; set; }
+        public bool IsFinished { get; set; }
 
         public Form1()
         {
@@ -44,16 +44,36 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGrid_B[i, 0].Value = 0;
                 dataGrid_B.UpdateCellValue(i, 0);
             }
+
+            for(int i = 0; i < dataGridView_A_Result.ColumnCount; i++)
+            {
+                dataGridView_A_Result[i, 0].Value = 0;
+                dataGridView_A_Result.UpdateCellValue(i, 0);
+                dataGridView_B_Result[i, 0].Value = 0;
+                dataGridView_B_Result.UpdateCellValue(i, 0);
+            }
+
+            for(int i = 0; i < dataGridView_C_Result.ColumnCount; i++)
+            {
+                dataGridView_C_Result[i, 0].Value = 0;
+                dataGridView_C_Result.UpdateCellValue(i, 0);
+            }
+
+            for(int i = 0; i < dataGridView_Count_Result.ColumnCount; i++)
+            {
+                dataGridView_Count_Result[i, 0].Value = 0;
+                dataGridView_Count_Result.UpdateCellValue(i, 0);
+            }
         }
 
         public void FinishModel()
         {
             MessageBox.Show("Моделирование закончено!");
-            IsFinished = true;
             button_Start.Enabled = true;
             button_Tact.Enabled = false;
             UncheckAllButtonInMP();
             ResetCellsValues();
+            IsFinished = true;
         }
 
         public void UpdateResultGrids(ushort A, ushort B, uint C, byte Count)
@@ -84,6 +104,42 @@ namespace Modelirovanie_KR_2_Anisimov
             {
                 dataGridView_Count_Result.Rows[0].Cells[i].Value = result[count];
                 dataGridView_Count_Result.UpdateCellValue(i, 0);
+            }
+        }
+
+        public void UpdateStateGrid(bool[] D)
+        {
+            for(int i = 0, j = dataGridView_D_1.ColumnCount - 1; i < D.Length && j > 0; i++, j--)
+            {
+                dataGridView_D_1[j, 0].Value = Convert.ToInt32(D[i]);
+                dataGridView_D_1.UpdateCellValue(j, 0);
+            }
+        }
+        
+        public void UpdateInfoForOA(bool[] A, bool[] Y, bool[] D, bool[] X)
+        {
+            for(int i = 0, j = dataGridView_A.ColumnCount - 1; i < A.Length && j > 0; i++, j--)
+            {
+                dataGridView_A[j, 0].Value = Convert.ToInt32(A[i]);
+                dataGridView_A.UpdateCellValue(j, 0);
+            }
+
+            for (int i = 0, j = dataGridView_Y.ColumnCount - 1; i < Y.Length && j > 0; i++, j--)
+            {
+                dataGridView_Y[j, 0].Value = Convert.ToInt32(Y[i]);
+                dataGridView_Y.UpdateCellValue(j, 0);
+            }
+
+            for (int i = 0, j = dataGridView_D_2.ColumnCount - 1; i < D.Length && j > 0; i++, j--)
+            {
+                dataGridView_D_2[j, 0].Value = Convert.ToInt32(D[i]);
+                dataGridView_D_2.UpdateCellValue(j, 0);
+            }
+
+            for (int i = 0, j = dataGridView_X.ColumnCount - 1; i < X.Length && j > 0; i++, j--)
+            {
+                dataGridView_X[j, 0].Value = Convert.ToInt32(X[i]);
+                dataGridView_X.UpdateCellValue(j, 0);
             }
         }
 
@@ -144,13 +200,14 @@ namespace Modelirovanie_KR_2_Anisimov
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.button_Tact.Enabled = false;
-            this.button_Start.Enabled = true;
+            button_Tact.Enabled = false;
+            button_Start.Enabled = true;
         }
 
         private void button_Start_Click(object sender, EventArgs e)
         {
-            this.button_Start.Enabled = false;
+            button_Start.Enabled = false;
+            button_auto.Enabled = false;
             if (_type)
             {
                 // здесь будет происходит моделирование на уровне операционного устройства
@@ -163,13 +220,13 @@ namespace Modelirovanie_KR_2_Anisimov
                 _mp = new MicroProgrammOA(this);
                 _mp.MicroProgramm();
             }
-            this.button_Tact.Enabled = true;
+            button_Tact.Enabled = true;
         }
 
         private void button_auto_Click(object sender, EventArgs e)
         {
-            this.button_Start.Enabled = false;
-            this.button_Tact.Enabled = false;
+            button_Start.Enabled = false;
+            button_Tact.Enabled = false;
             if (_type)
             {
 
@@ -179,7 +236,7 @@ namespace Modelirovanie_KR_2_Anisimov
             {
                 // здесь будет происходит моделирование на уровне микропрограммы
                 _mp = new MicroProgrammOA(this);
-                _mp.AutoModeMP(IsFinished);
+                _mp.AutoModeMP();
             }
         }
 

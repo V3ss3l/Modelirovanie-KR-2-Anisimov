@@ -29,11 +29,17 @@ namespace Modelirovanie_KR_2_Anisimov
 
         public void Tact()
         {
-            StateMemory(Decoder());
-            ConditionMemory();
+            _form.UpdateStateGrid(_Ds);
+
+            StateMemory(Decoder(_Ds));
             CalculateTerms();
             CombCircuitY();
-            СombCircuitD();
+            СombCircuitD(_Ds);
+            OperationalAutomaton();
+            ConditionMemory();
+
+            _form.UpdateInfoForOA(_As, _Ys, _Ds, _Xs);
+            _form.UpdateResultGrids(_model.A, _model.B, _model.C, _model.Count);
         }
 
         private void StateMemory(int index)
@@ -45,7 +51,12 @@ namespace Modelirovanie_KR_2_Anisimov
 
         private void OperationalAutomaton()
         {
-            // TODO: сделать данный метод, который будет высчитывать микрооперации в зависимости от сигналов игрика
+            for(int i = 0; i < _Ys.Length; i++)
+            {
+                if (_Ys[i]) {
+                    _model.microOperations[i]();
+                }
+            }
         }
 
         // TODO: Проанализровать данный код, так как возможны ошибки при моделировании
@@ -56,23 +67,23 @@ namespace Modelirovanie_KR_2_Anisimov
             _Xs[3] = _model.X3();
             _Xs[4] = _model.X4();
             _Xs[5] = _model.X5();
-            _Xs[7] = _model.X6();
+            _Xs[6] = _model.X6();
         }
 
-        private void СombCircuitD()
+        private void СombCircuitD(bool[] D)
         {
-            _Ds[0] = _Ds[1] = _Ds[2] = _Ds[3] = false;
+            D[0] = D[1] = D[2] = D[3] = false;
 
-            _Ds[0] = _Ts[8] || _Ts[10] || _Ts[12] ||
+            D[0] = _Ts[8] || _Ts[10] || _Ts[12] ||
                 _Ts[13] || _Ts[15] || _Ts[18];
 
-            _Ds[1] = _Ts[9] || _Ts[10] || _Ts[14] ||
+            D[1] = _Ts[9] || _Ts[10] || _Ts[14] ||
                 _Ts[15] || _Ts[19];
 
-            _Ds[2] = _Ts[11] || _Ts[12] || _Ts[13] ||
+            D[2] = _Ts[11] || _Ts[12] || _Ts[13] ||
                 _Ts[14] || _Ts[15];
 
-            _Ds[3] = _Ts[16] || _Ts[17] || _Ts[18] || _Ts[19];
+            D[3] = _Ts[16] || _Ts[17] || _Ts[18] || _Ts[19];
         }
 
         private void CalculateTerms()
@@ -103,45 +114,45 @@ namespace Modelirovanie_KR_2_Anisimov
 
         private void CombCircuitY()
         {
-            _Ys[0] = _Ts[8] ? true : false;
-            _Ys[1] = _Ts[8] ? true : false;
-            _Ys[2] = _Ts[9] || _Ts[12] || _Ts[13] ? true : false;
-            _Ys[3] = _Ts[1] || _Ts[3] ? true : false;
-            _Ys[4] = _Ts[10] || _Ts[15] ? true : false;
-            _Ys[5] = _Ts[11] || _Ts[16] || _Ts[17] ? true : false;
-            _Ys[6] = _Ts[11] ? true : false;
-            _Ys[7] = _Ts[11] ? true : false;
-            _Ys[8] = _Ts[14] ? true : false;
-            _Ys[9] = _Ts[16] || _Ts[17] ? true : false;
-            _Ys[10] = _Ts[18] ? true : false; 
-            _Ys[11] = _Ts[19] ? true : false;
-            _Ys[12] = _Ts[5] || _Ts[7] ? true : false;
+            _Ys[0] = _Ts[8];
+            _Ys[1] = _Ts[8];
+            _Ys[2] = _Ts[9] || _Ts[12] || _Ts[13];
+            _Ys[3] = _Ts[1] || _Ts[3];
+            _Ys[4] = _Ts[10] || _Ts[15];
+            _Ys[5] = _Ts[11] || _Ts[16] || _Ts[17];
+            _Ys[6] = _Ts[11];
+            _Ys[7] = _Ts[11];
+            _Ys[8] = _Ts[14];
+            _Ys[9] = _Ts[16] || _Ts[17];
+            _Ys[10] = _Ts[18]; 
+            _Ys[11] = _Ts[19];
+            _Ys[12] = _Ts[5] || _Ts[7];
         }
 
 
 
-        private int Decoder()
+        private int Decoder(bool[] D)
         {
             var _current = 0;
-            if (_Ds[0])
+            if (D[0])
             {
                 _current = 1;
-                _Ds[0] = false;
+                D[0] = false;
             }
-            if (_Ds[1])
+            if (D[1])
             {
                 _current += 2;
-                _Ds[1] = false;
+                D[1] = false;
             }
-            if (_Ds[2])
+            if (D[2])
             {
                 _current += 4;
-                _Ds[2] = false;
+                D[2] = false;
             }
-            if (_Ds[3])
+            if (D[3])
             {
                 _current += 8;
-                _Ds[3] = false;
+                D[3] = false;
             }
 
             return _current;

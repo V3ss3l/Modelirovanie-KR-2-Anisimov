@@ -56,7 +56,7 @@ namespace Modelirovanie_KR_2_Anisimov
 
         public bool X5() { return (ushort) (B & 1) == 1; }
 
-        public bool X6() { return ((A >> 15) ^ (B >> 15)) == 1; }
+        public bool X6() { return ((A & 0x8000) ^ (B & 0x8000)) != 0; }
 
     }
 }

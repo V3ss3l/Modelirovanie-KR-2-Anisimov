@@ -15,13 +15,13 @@ namespace Modelirovanie_KR_2_Anisimov
             _state = 0;
         }
         
-        public void AutoModeMP(bool flag)
+        public void AutoModeMP()
         {
-            while(!flag)
+            while(!_form.IsFinished)
             {
                 MicroProgramm();
             }
-            _form.IsFinished = false;
+            return;
         }
 
         public void MicroProgramm()
@@ -208,7 +208,6 @@ namespace Modelirovanie_KR_2_Anisimov
                     {
                         _form.RadioButtonArr[11].Checked = true;
                         _state = 0;
-                        _form.IsFinished = true;
                         _form.FinishModel();
                         break;
                     }
