@@ -63,9 +63,9 @@ namespace Modelirovanie_KR_2_Anisimov.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ГСА_вар_3_drawio {
+        internal static System.Drawing.Bitmap ГСА_drawio {
             get {
-                object obj = ResourceManager.GetObject("ГСА_вар_3_drawio", resourceCulture);
+                object obj = ResourceManager.GetObject("ГСА_drawio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace Modelirovanie_KR_2_Anisimov.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Схема_ОУ_drawio {
             get {
-                object obj = ResourceManager.GetObject("Схема_ОУ_drawio", resourceCulture);
+                object obj = ResourceManager.GetObject("Схема ОУ.drawio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

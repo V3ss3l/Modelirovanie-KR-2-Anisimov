@@ -35,7 +35,7 @@ namespace Modelirovanie_KR_2_Anisimov
                 () => { B = 0; }, // y8
                 () => {
                     ushort number = (ushort)((C << 15 >> 31) == 1 ? 0 : 1);
-                    B = (ushort)((B << 1) + number);
+                    B = (ushort)((B << 1) | number);
 
                 }, // y9
                 () => { Count = (byte)(Count == 0 ? 15 : Count - 1); }, // y10

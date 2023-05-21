@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace Modelirovanie_KR_2_Anisimov
@@ -66,6 +65,39 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        public void ResetOAInfo()
+        {
+            for (int j = dataGridView_D_1.ColumnCount - 1; j > 0; j--)
+            {
+                dataGridView_D_1[j, 0].Value = 0;
+                dataGridView_D_1.UpdateCellValue(j, 0);
+            }
+
+            for (int j = dataGridView_A.ColumnCount - 1;j > 0; j--)
+            {
+                dataGridView_A[j, 0].Value = 0;
+                dataGridView_A.UpdateCellValue(j, 0);
+            }
+
+            for (int j = dataGridView_Y.ColumnCount - 1; j > 0; j--)
+            {
+                dataGridView_Y[j, 0].Value = 0;
+                dataGridView_Y.UpdateCellValue(j, 0);
+            }
+
+            for (int j = dataGridView_D_2.ColumnCount - 1; j > 0;j--)
+            {
+                dataGridView_D_2[j, 0].Value = 0;
+                dataGridView_D_2.UpdateCellValue(j, 0);
+            }
+
+            for (int j = dataGridView_X.ColumnCount - 1; j > 0; j--)
+            {
+                dataGridView_X[j, 0].Value = 0;
+                dataGridView_X.UpdateCellValue(j, 0);
+            }
+        }
+
         public void FinishModel()
         {
             MessageBox.Show("Моделирование закончено!");
@@ -106,6 +138,7 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGridView_Count_Result.UpdateCellValue(i, 0);
             }
         }
+
 
         public void UpdateStateGrid(bool[] D)
         {
@@ -193,7 +226,6 @@ namespace Modelirovanie_KR_2_Anisimov
         private void updateValueOfCell(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView grid = sender as DataGridView;
-            //if (e.ColumnIndex == 15) grid[e.ColumnIndex, e.RowIndex].Value = "0";
             if (grid[e.ColumnIndex, e.RowIndex].Value == null) grid[e.ColumnIndex, e.RowIndex].Value = "0";
             grid[e.ColumnIndex, e.RowIndex].Value = grid[e.ColumnIndex, e.RowIndex].Value.ToString() == "0" ? "1" : "0";
         }
@@ -231,6 +263,8 @@ namespace Modelirovanie_KR_2_Anisimov
             {
 
                 // здесь будет происходит моделирование на уровне операционного устройства
+                _device= new OperationalDevice(this);
+                _device.AutoModeOA();
             }
             else
             {
@@ -256,6 +290,17 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGrid_B[i, 0].Value = 0;
                 dataGrid_B.UpdateCellValue(i, 0);
             }
+        }
+
+        private void button_Clear_click(object sender, EventArgs e)
+        {
+            _device = new OperationalDevice(this);
+            _mp = new MicroProgrammOA(this);
+            button_Start.Enabled = true;
+            button_Tact.Enabled = false;
+            ResetCellsValues();
+            ResetOAInfo();
+            UncheckAllButtonInMP();
         }
     }
 }

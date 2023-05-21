@@ -27,6 +27,14 @@ namespace Modelirovanie_KR_2_Anisimov
             _model = new Model(_form.ConvertDataToNumbers());
         }
 
+        public void AutoModeOA()
+        {
+            while (!_form.IsFinished)
+            {
+                Tact();
+            }
+        }
+        
         public void Tact()
         {
             _form.UpdateStateGrid(_Ds);
@@ -59,7 +67,6 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
-        // TODO: Проанализровать данный код, так как возможны ошибки при моделировании
         private void ConditionMemory()
         {
             _Xs[1] = _model.X1();
