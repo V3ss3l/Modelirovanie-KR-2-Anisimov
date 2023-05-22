@@ -47,11 +47,15 @@ namespace Modelirovanie_KR_2_Anisimov
             {
                 dataGrid_A[i, 0].Value = 0;
                 dataGrid_A.UpdateCellValue(i, 0);
+            }
+
+            for (int i = 0; i < dataGrid_B.ColumnCount; i++)
+            {
                 dataGrid_B[i, 0].Value = 0;
                 dataGrid_B.UpdateCellValue(i, 0);
             }
-
-            for(int i = 0; i < dataGridView_A_Result.ColumnCount; i++)
+            
+            for (int i = 0; i < dataGridView_A_Result.ColumnCount; i++)
             {
                 dataGridView_A_Result[i, 0].Value = 0;
                 dataGridView_A_Result.UpdateCellValue(i, 0);
@@ -59,7 +63,13 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGridView_B_Result.UpdateCellValue(i, 0);
             }
 
-            for(int i = 0; i < dataGridView_C_Result.ColumnCount; i++)
+            for (int i = 0; i < dataGridView_B_Result.ColumnCount; i++)
+            {
+                dataGridView_B_Result[i, 0].Value = 0;
+                dataGridView_B_Result.UpdateCellValue(i, 0);
+            }
+
+            for (int i = 0; i < dataGridView_C_Result.ColumnCount; i++)
             {
                 dataGridView_C_Result[i, 0].Value = 0;
                 dataGridView_C_Result.UpdateCellValue(i, 0);
@@ -119,7 +129,7 @@ namespace Modelirovanie_KR_2_Anisimov
         }
 
         // обновление значений таблиц результатов вычисления чисел
-        public void UpdateResultGrids(ushort A, ushort B, uint C, byte Count)
+        public void UpdateResultGrids(ushort A, uint B, uint C, byte Count)
         {
             var result = Convert.ToString(A, 2).PadLeft(16, '0');
             for (int i = 0, a = 0; i < dataGridView_A_Result.ColumnCount; i++, a++)
@@ -128,7 +138,7 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGridView_A_Result.UpdateCellValue(i, 0);
             }
 
-            result = Convert.ToString(B, 2).PadLeft(16, '0');
+            result = Convert.ToString(B, 2).PadLeft(17, '0');
             for (int i = 0, b = 0; i < dataGridView_B_Result.ColumnCount; i++, b++)
             {
                 dataGridView_B_Result.Rows[0].Cells[i].Value = result[b];
@@ -202,19 +212,24 @@ namespace Modelirovanie_KR_2_Anisimov
         }
 
         // перевод значений таблиц исходных данных в числа и передача их в класс Модели в виде массива из двух чисел
-        public ushort[] ConvertDataToNumbers()
+        public ushort ConvertDataToNumbers_A()
         {
             string str_1 = "";
-            string str_2 = "";
             for (int i = 0; i < dataGrid_A.ColumnCount; i++)
             {
                 str_1 += dataGrid_A[i, 0].Value.ToString();
+            }
+            return Convert.ToUInt16(str_1, 2);
+        }
+
+        public uint ConvertDataToNumbers_B()
+        {
+            string str_2 = "";
+            for (int i = 0; i < dataGrid_B.ColumnCount; i++)
+            {
                 str_2 += dataGrid_B[i, 0].Value.ToString();
             }
-            ushort[] arr = new ushort[2];
-            arr[0] = Convert.ToUInt16(str_1, 2);
-            arr[1] = Convert.ToUInt16(str_2, 2);
-            return arr;
+            return Convert.ToUInt32(str_2, 2);
         }
 
         // выбор типа моделирование (На основе МП или на основе УА)
@@ -283,6 +298,7 @@ namespace Modelirovanie_KR_2_Anisimov
                 _mp = new MicroProgrammOA(this);
                 _mp.AutoModeMP();
             }
+            IsFinished = false;
         }
 
         private void button_clear_A_Click(object sender, EventArgs e)
@@ -308,6 +324,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _device = new OperationalDevice(this);
             _mp = new MicroProgrammOA(this);
             button_Start.Enabled = true;
+            button_auto.Enabled = true;
             button_Tact.Enabled = false;
             ResetCellsValues();
             ResetOAInfo();

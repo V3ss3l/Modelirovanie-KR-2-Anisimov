@@ -12,6 +12,7 @@ namespace Modelirovanie_KR_2_Anisimov
         private bool[] _Ts; // T1, T2, T3, ...
         private Form1 _form;
         private Model _model;
+        private bool flag;
 
         public OperationalDevice(Form1 form)
         {
@@ -23,7 +24,10 @@ namespace Modelirovanie_KR_2_Anisimov
             _Ds = new bool[4];
             _Ts = new bool[20];
             _form = form;
-            _model = new Model(_form.ConvertDataToNumbers());
+            var A = _form.ConvertDataToNumbers_A();
+            var B = _form.ConvertDataToNumbers_B();
+            _model = new Model(A, B);
+            flag = false;
         }
 
         // автоматический режим работы моделирования ОУ на основе УА
@@ -32,6 +36,12 @@ namespace Modelirovanie_KR_2_Anisimov
             while (!_form.IsFinished)
             {
                 Tact();
+                for (int i = 0; i < _Ds.Length; i++)
+                {
+                    if (_Ds[i]) flag = false;
+                    else flag = true;
+                }
+                if (flag) _form.FinishModel();
             }
         }
 
@@ -49,6 +59,7 @@ namespace Modelirovanie_KR_2_Anisimov
 
             _form.UpdateInfoForOA(_As, _Ys, _Ds, _Xs);
             _form.UpdateResultGrids(_model.A, _model.B, _model.C, _model.Count);
+            
         }
 
         // память состояний

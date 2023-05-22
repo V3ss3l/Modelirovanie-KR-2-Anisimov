@@ -10,8 +10,9 @@ namespace Modelirovanie_KR_2_Anisimov
         public MicroProgrammOA(Form1 form1)
         {
             _form = form1;
-            var arr = _form.ConvertDataToNumbers();
-            _model = new Model(arr);
+            var A = _form.ConvertDataToNumbers_A();
+            var B = _form.ConvertDataToNumbers_B();
+            _model = new Model(A, B);
             _state = 0;
         }
         
@@ -35,7 +36,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         _form.RadioButtonArr[0].Checked = true;
                         _model.microOperations[0]();
                         _model.microOperations[1]();
-                        Thread.Sleep(500);
                         _form.CheckBoxArr[0].Checked = true;
                         _state = 1;
                         break;
@@ -48,7 +48,6 @@ namespace Modelirovanie_KR_2_Anisimov
                             if (!_model.X2())
                             {
                                 _model.microOperations[2]();
-                                Thread.Sleep(500);
                                 _form.CheckBoxArr[1].Checked = true;
                                 _state = 2;
 
@@ -58,7 +57,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         else
                         {
                             _model.microOperations[3]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[2].Checked = true;
                             _state = 11;
                         }
@@ -71,14 +69,12 @@ namespace Modelirovanie_KR_2_Anisimov
                         if (_model.X3())
                         {
                             _model.microOperations[4]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[3].Checked = true;
                             _state = 3;
                         }
                         else
                         {
                             _model.microOperations[3]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[2].Checked = true;
                             _state = 11;
                         }
@@ -90,7 +86,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         _model.microOperations[5]();
                         _model.microOperations[6]();
                         _model.microOperations[7]();
-                        Thread.Sleep(500);
                         _form.CheckBoxArr[4].Checked = true;
                         _state = 4;
                         break;
@@ -100,7 +95,6 @@ namespace Modelirovanie_KR_2_Anisimov
 
                         _form.RadioButtonArr[4].Checked = true;
                         _model.microOperations[2]();
-                        Thread.Sleep(500);
                         _form.CheckBoxArr[5].Checked = true;
                         _state = 5;
                         break;
@@ -110,7 +104,6 @@ namespace Modelirovanie_KR_2_Anisimov
 
                         _form.RadioButtonArr[5].Checked = true;
                         _model.microOperations[8]();
-                        Thread.Sleep(500);
                         _form.CheckBoxArr[6].Checked = true;
                         _state = 6;
                         break;
@@ -122,7 +115,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         if (_model.X3())
                         {
                             _model.microOperations[4]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[7].Checked = true;
                             _state = 7;
                         }
@@ -130,7 +122,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         {
                             _model.microOperations[5]();
                             _model.microOperations[9]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[8].Checked = true;
                             _state = 8;
                         }
@@ -142,7 +133,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         _form.RadioButtonArr[7].Checked = true;
                         _model.microOperations[5]();
                         _model.microOperations[9]();
-                        Thread.Sleep(500);
                         _form.CheckBoxArr[8].Checked = true;
                         _state = 8;
                         break;
@@ -154,14 +144,12 @@ namespace Modelirovanie_KR_2_Anisimov
                         if (_model.X4())
                         {
                             _model.microOperations[10]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[9].Checked = true;
                             _state = 9;
                         }
                         else
                         {
                             _model.microOperations[2]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[5].Checked = true;
                             _state = 5;
                         }
@@ -174,7 +162,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         if (_model.X5())
                         {
                             _model.microOperations[11]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[10].Checked = true;
                             _state = 10;
                         }
@@ -183,7 +170,6 @@ namespace Modelirovanie_KR_2_Anisimov
                             if (_model.X6())
                             {
                                 _model.microOperations[12]();
-                                Thread.Sleep(500);
                                 _form.CheckBoxArr[11].Checked = true;
                                 _state = 11;
                             }
@@ -198,7 +184,6 @@ namespace Modelirovanie_KR_2_Anisimov
                         if (_model.X6())
                         {
                             _model.microOperations[12]();
-                            Thread.Sleep(500);
                             _form.CheckBoxArr[11].Checked = true;
                             _state = 11;
                         }
