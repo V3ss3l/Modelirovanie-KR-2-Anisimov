@@ -5,7 +5,6 @@ namespace Modelirovanie_KR_2_Anisimov
     class OperationalDevice
     {
         private bool[] _As; // A1, A2, A3 ...
-        //private int _currentState;
         private int _prevState;
         private bool[] _Xs; // X1, X2, X3, ...
         private bool[] _Ys; // Y1, Y2, Y3, ...
@@ -27,6 +26,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _model = new Model(_form.ConvertDataToNumbers());
         }
 
+        // автоматический режим работы моделирования ОУ на основе УА
         public void AutoModeOA()
         {
             while (!_form.IsFinished)
@@ -34,7 +34,8 @@ namespace Modelirovanie_KR_2_Anisimov
                 Tact();
             }
         }
-        
+
+        // потактовыый режим работы моделирования ОУ на основе УА
         public void Tact()
         {
             _form.UpdateStateGrid(_Ds);
@@ -50,6 +51,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _form.UpdateResultGrids(_model.A, _model.B, _model.C, _model.Count);
         }
 
+        // память состояний
         private void StateMemory(int index)
         {
             _As[_prevState] = false;
@@ -57,6 +59,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _prevState = index;
         }
 
+        // операционный автомат
         private void OperationalAutomaton()
         {
             for(int i = 0; i < _Ys.Length; i++)
@@ -67,6 +70,7 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        // память логических условий
         private void ConditionMemory()
         {
             _Xs[1] = _model.X1();
@@ -77,6 +81,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _Xs[6] = _model.X6();
         }
 
+        // комбинационная схема D
         private void СombCircuitD(bool[] D)
         {
             D[0] = D[1] = D[2] = D[3] = false;
@@ -93,6 +98,7 @@ namespace Modelirovanie_KR_2_Anisimov
             D[3] = _Ts[16] || _Ts[17] || _Ts[18] || _Ts[19];
         }
 
+        // подсчет терм для передачи их в комбинационные схемы D и Y
         private void CalculateTerms()
         {
             for (int i = 0; i < _Ts.Length; i++) _Ts[i] = false;
@@ -119,6 +125,7 @@ namespace Modelirovanie_KR_2_Anisimov
             _Ts[19] = _As[9] && _Xs[5];
         }
 
+        // комбинационная схема Y
         private void CombCircuitY()
         {
             _Ys[0] = _Ts[8];
@@ -135,9 +142,8 @@ namespace Modelirovanie_KR_2_Anisimov
             _Ys[11] = _Ts[19];
             _Ys[12] = _Ts[5] || _Ts[7];
         }
-
-
-
+        
+        // дешифратор
         private int Decoder(bool[] D)
         {
             var _current = 0;

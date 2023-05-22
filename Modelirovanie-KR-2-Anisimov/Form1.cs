@@ -12,7 +12,6 @@ namespace Modelirovanie_KR_2_Anisimov
         private MicroProgrammOA _mp;
         public CheckBox[] CheckBoxArr { get; set; }
         public RadioButton[] RadioButtonArr { get; set; }
-
         public bool IsFinished { get; set; }
 
         public Form1()
@@ -34,6 +33,14 @@ namespace Modelirovanie_KR_2_Anisimov
             IsFinished = false;
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            button_Tact.Enabled = false;
+            button_Start.Enabled = true;
+            button_auto.Enabled = true;
+        }
+
+        // сброс таблиц вывода результата вычисления чисел в течении работы модели
         public void ResetCellsValues()
         {
             for (int i = 0; i < dataGrid_A.ColumnCount; i++)
@@ -65,6 +72,7 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        // сброс таблиц кодов в схеме моделирования ОУ
         public void ResetOAInfo()
         {
             for (int j = dataGridView_D_1.ColumnCount - 1; j > 0; j--)
@@ -98,16 +106,19 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        // вспомогающий метод, заверщающий моделирования на основе МП
         public void FinishModel()
         {
             MessageBox.Show("Моделирование закончено!");
             button_Start.Enabled = true;
+            button_auto.Enabled = true;
             button_Tact.Enabled = false;
             UncheckAllButtonInMP();
             ResetCellsValues();
             IsFinished = true;
         }
 
+        // обновление значений таблиц результатов вычисления чисел
         public void UpdateResultGrids(ushort A, ushort B, uint C, byte Count)
         {
             var result = Convert.ToString(A, 2).PadLeft(16, '0');
@@ -138,8 +149,8 @@ namespace Modelirovanie_KR_2_Anisimov
                 dataGridView_Count_Result.UpdateCellValue(i, 0);
             }
         }
-
-
+        
+        // обновление значений кодов состояний в начале такта
         public void UpdateStateGrid(bool[] D)
         {
             for(int i = 0, j = dataGridView_D_1.ColumnCount - 1; i < D.Length && j > 0; i++, j--)
@@ -149,6 +160,7 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
         
+        // обновление значений кодов на схеме ОУ
         public void UpdateInfoForOA(bool[] A, bool[] Y, bool[] D, bool[] X)
         {
             for(int i = 0, j = dataGridView_A.ColumnCount - 1; i < A.Length && j > 0; i++, j--)
@@ -176,6 +188,7 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        // сброс всех radioButton и checkBox на ГСА
         public void UncheckAllButtonInMP()
         {
             foreach (CheckBox checkBox in CheckBoxArr)
@@ -188,6 +201,7 @@ namespace Modelirovanie_KR_2_Anisimov
             }
         }
 
+        // перевод значений таблиц исходных данных в числа и передача их в класс Модели в виде массива из двух чисел
         public ushort[] ConvertDataToNumbers()
         {
             string str_1 = "";
@@ -203,6 +217,22 @@ namespace Modelirovanie_KR_2_Anisimov
             return arr;
         }
 
+        // выбор типа моделирование (На основе МП или на основе УА)
+        private void comboBox_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Type.SelectedIndex == 0) _type = false;
+            else _type = true;
+        }
+
+        // обработчки события нажатия на ячейку таблицы исходных данных
+        private void updateValueOfCell(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView grid = sender as DataGridView;
+            if (grid[e.ColumnIndex, e.RowIndex].Value == null) grid[e.ColumnIndex, e.RowIndex].Value = "0";
+            grid[e.ColumnIndex, e.RowIndex].Value = grid[e.ColumnIndex, e.RowIndex].Value.ToString() == "0" ? "1" : "0";
+        }
+
+        #region Buttons
         private void button_Tact_Click(object sender, EventArgs e)
         {
             if (_type)
@@ -215,25 +245,6 @@ namespace Modelirovanie_KR_2_Anisimov
                 // здесь будет происходит моделирование на уровне микропрограммы
                 _mp.MicroProgramm();
             }
-        }
-
-        private void comboBox_Type_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox_Type.SelectedIndex == 0) _type = false;
-            else _type = true;
-        }
-
-        private void updateValueOfCell(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridView grid = sender as DataGridView;
-            if (grid[e.ColumnIndex, e.RowIndex].Value == null) grid[e.ColumnIndex, e.RowIndex].Value = "0";
-            grid[e.ColumnIndex, e.RowIndex].Value = grid[e.ColumnIndex, e.RowIndex].Value.ToString() == "0" ? "1" : "0";
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            button_Tact.Enabled = false;
-            button_Start.Enabled = true;
         }
 
         private void button_Start_Click(object sender, EventArgs e)
@@ -302,5 +313,6 @@ namespace Modelirovanie_KR_2_Anisimov
             ResetOAInfo();
             UncheckAllButtonInMP();
         }
+        #endregion
     }
 }

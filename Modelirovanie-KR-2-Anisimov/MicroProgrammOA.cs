@@ -15,15 +15,16 @@ namespace Modelirovanie_KR_2_Anisimov
             _state = 0;
         }
         
+        // автоматический режим работы МП
         public void AutoModeMP()
         {
-            while(!_form.IsFinished)
+            while (!_form.IsFinished)
             {
                 MicroProgramm();
             }
-            return;
         }
 
+        // метод, отвечающий за потактовую работу МП по ГСА
         public void MicroProgramm()
         {
             _form.UncheckAllButtonInMP();

@@ -9,6 +9,7 @@ namespace Modelirovanie_KR_2_Anisimov
         public uint C;
         public byte Count;
         public bool PP;
+        // массив делегатов, содержащий в себе микрооперации
         public Action[] microOperations { get; set; }
 
         public Model(ushort[] arr)
@@ -45,7 +46,7 @@ namespace Modelirovanie_KR_2_Anisimov
 
             };
         }
-
+        #region Logical Conditions 
         public bool X1() { return (ushort)(A & 0x7FFF) == 0; }
 
         public bool X2() { return (C & 0xFFFFFFFF) == 0; }
@@ -57,6 +58,6 @@ namespace Modelirovanie_KR_2_Anisimov
         public bool X5() { return (ushort) (B & 1) == 1; }
 
         public bool X6() { return ((A & 0x8000) ^ (B & 0x8000)) != 0; }
-
+        #endregion
     }
 }
